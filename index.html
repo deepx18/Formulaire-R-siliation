@@ -13,14 +13,13 @@
 </head>
 <body>
 
-    <!-- En-tête de la page -->
-    <div class="header">
+        <div class="header">
       <a href="about.html"><img src="./logo.svg" alt="Coveria Assurance Logo"></a>
       <a href="about.html" class="return">Retour à l'acceuil ↩</a>
     </div>
       
     <section class="introduction">
-      <img src="./image1.jpg" width="400px" alt="">
+      <img src="./image2.png" width="400px" alt="">
       <div class="introduction-text">
           <h1>Tout savoir sur la résiliation de votre contrat d'assurance</h1>
           <p>Il est désormais possible de demander par voie électronique et gratuitement la résiliation de votre contrat d’assurance grâce au nouveau dispositif de « résiliation en 3 clics ».</p>
@@ -29,26 +28,21 @@
     </section>
 
     <div class="content-container">
-        <!-- Section d'introduction -->
 
-      <!-- Section: Qu'est-ce qu'une résiliation ? -->
-      <section class="definition">
+          <section class="definition">
           <h2>Qu’est-ce qu’une résiliation ?</h2>
           <p>La résiliation de contrat d'assurance est la rupture anticipée du contrat, que ce soit à votre demande ou à celle de l'assureur. Cette action doit respecter certaines conditions en termes de délais et de forme. Elle peut être effectuée dans différents cas, que ce soit pour des motifs légaux ou conventionnels.</p>
       </section>
 
-      <!-- Section: Cas de résiliation -->
-      <section class="cas-resiliation">
+          <section class="cas-resiliation">
           <h2>Quels sont les principaux cas de résiliation d’un contrat d’assurance ?</h2>
 
-          <!-- Résiliation à échéance annuelle -->
-          <div class="cas-item">
+              <div class="cas-item">
               <h3>Résiliation à échéance annuelle</h3>
               <p>Vous pouvez résilier votre contrat à la fin de chaque période annuelle, en respectant un préavis de deux mois avant la date d’échéance du contrat.</p>
           </div>
 
-          <!-- Résiliation en cas de changement de situation -->
-          <div class="cas-item">
+              <div class="cas-item">
               <h3>Résiliation en cas de changement de situation</h3>
               <p>Vous pouvez résilier votre contrat en cas de changement de situation (déménagement, mariage, profession, etc.). Cette résiliation doit être demandée dans les trois mois suivant l'événement concerné.</p>
               <ul>
@@ -59,33 +53,28 @@
               </ul>
           </div>
 
-          <!-- Résiliation infra-annuelle -->
-          <div class="cas-item">
+              <div class="cas-item">
               <h3>Résiliation infra-annuelle</h3>
               <p>La résiliation infra-annuelle (RIA) vous permet de résilier votre contrat après un an d'adhésion, à tout moment. Cette option est ouverte à plusieurs types de contrats, tels que l'assurance habitation, automobile, et complémentaire santé.</p>
           </div>
 
-          <!-- Résiliation pour augmentation tarifaire -->
-          <div class="cas-item">
+              <div class="cas-item">
               <h3>Résiliation pour augmentation tarifaire</h3>
               <p>En cas d'augmentation des tarifs, vous avez la possibilité de résilier votre contrat. L’assureur vous en informe par l'envoi d'un avis d'échéance annuelle, et vous disposez généralement de 15 à 30 jours pour demander la résiliation.</p>
           </div>
 
-          <!-- Résiliation en cas de décès de l'assuré -->
-          <div class="cas-item">
+              <div class="cas-item">
               <h3>Résiliation en cas de décès de l’assuré</h3>
               <p>En cas de décès de l'assuré, les héritiers ou bénéficiaires peuvent demander la résiliation du contrat d'assurance. La demande doit être formulée dès que le décès est connu.</p>
           </div>
       </section>
 
-      <!-- Section: Conséquences de la résiliation -->
-      <section class="consequences">
+          <section class="consequences">
           <h2>Quelles sont les conséquences d’une résiliation ?</h2>
           <p>La résiliation entraîne la perte de la couverture d'assurance. Vous ne serez plus couvert à compter de la date d’effet de la résiliation, et devrez souscrire un nouveau contrat pour obtenir une couverture.</p>
       </section>
 
-      <!-- Section: Comment résilier votre contrat ? -->
-      <section class="demande">
+          <section class="demande">
           <h2>Comment résilier votre contrat d’assurance ?</h2>
           <p>Pour résilier votre contrat, vous pouvez utiliser plusieurs méthodes :</p>
           <ul>
@@ -96,9 +85,8 @@
       </section>
     </div>
 
-    <!-- Section: Formulaire de demande de résiliation -->
-    <h2>Formuler une demande de résiliation</h2>
-    <section class="formulaire">
+        <h2>Formuler une demande de résiliation</h2>
+    <section class="formulaire"id="1">
         <form action="submit_resiliation.php" method="POST">
 
           <div class="line1">
@@ -115,12 +103,65 @@
             <label for="email">Email :</label>
             <input type="email" id="email" name="email" required><br>
           </div>
-
+          
+          <div class="line3">
+            <label for="email">Raison / dénomination sociale <small>(si vous êtes une entreprise)</small> :</label>
+            <input type="text" id="email" name="email" required><br>
+          </div>
           <div class="line4">
+            <label for="email">Date de naissance :</label>
+            <input type="date" id="email" name="email" required><br>
+          </div>
+          <div class="line5">
+            <label for="email">Adress Postale :</label>
+            <input type="text" id="email" name="email" required><br>
+          </div>
+          <div class="line6">
+            <label for="email">Risque couvert :</label>
+            <select name="" id="" required>
+              <option value="">Santé</option>
+              <option value="">Prévoyance</option>
+              <option value="">IARD</option>
+            </select>  
+          </div>
+          <div class="line7">
+            <label for="email">Numéro d'adhèrent :</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+          <div class="line8">
+            <label for="email">Numéro de contrat :</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+          <div class="line9">
+            <label for="email">Numéro de téléphone :</label>
+            <input type="tel" id="email" name="email" required><br>
+          </div>
+          <div class="line10">
+            <label for="email">Motif de résiliation :</label>
+            <select name="" id="" required>
+              <option value="">Résiliation à échéance</option>
+              <option value="">Résiliation infra annuelle (RIA)</option>
+              <option value="">Changement de situation</option>
+              <option value="">Augmentation tarifaire</option>
+              <option value="">Décès de l'assuré</option>
+              <option value="">Autres</option>
+            </select>
+          </div>
+          <div class="line11">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+          <div class="line12">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+
+
+          <div class="line13">
             <label for="raison">Raison de la résiliation :</label><br>
             <textarea id="raison" name="raison" rows="4" required></textarea><br>
           </div>
-          <div class="line5">
+          <div class="line14">
             <button type="submit">Soumettre la demande</button>
           </div>
 
@@ -129,8 +170,7 @@
         </form>
       </section>
 
-    <!-- Footer -->
-    <footer>
+        <footer>
         <img src="logo1.svg" alt="Coveria Assurance Logo">
         <p>&copy; 2025 Coveria Assurances. Tous droits réservés.</p>
     </footer>
