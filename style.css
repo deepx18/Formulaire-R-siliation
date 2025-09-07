@@ -134,7 +134,7 @@ body > h2 {
     box-shadow: 1px 1px 10px .5px #b7b3b3,
                 -1px -1px 10px .5px #b7b3b3;
     width: 85%;
-    max-height: 900px;
+    height: 900px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -236,8 +236,8 @@ footer {
 @media screen and (max-width: 1000px) {
   .introduction {
     width: calc(100% - 20px);
-    min-height: fit-content;
-    height: auto;
+    max-height: none;
+    height: fit-content;
     padding: 10px;
     flex-direction: column;
     align-items: center;
@@ -259,7 +259,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: auto;
     padding: 30px;
 
   }
