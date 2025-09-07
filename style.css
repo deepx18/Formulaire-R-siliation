@@ -61,15 +61,16 @@ body {
 
 }
 
-body > h2 {
+.formulaire > h2 {
   margin: 20px 0;
+  text-align: center;
   font-size: 30px;
 }
 .introduction {
-  min-height: 800px;
+  height: 800px;
   height: auto;
   display: flex;
-  background-color: #74b2fe;
+  background-color: #0b1970;
   color: white;
   justify-content: center;
   align-items: center;
@@ -86,7 +87,7 @@ body > h2 {
   }
 
   img {
-    height: 400px;
+    height: 600px;
     width: 500px;
 
   }
@@ -140,7 +141,7 @@ body > h2 {
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    background-color: #302f2f;
+    background-color: #c4452b;
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -162,10 +163,11 @@ body > h2 {
       font-weight: 500;
       cursor: pointer;
       transition: all ease .5s;
+      color: #c4452b;
     }
 
     button:hover {
-      background-color: #302f2f;
+      background-color: #c4452b;
       color: white;
       box-shadow: .5px .5px 10px .1px white,
                   -0.5px -0.5px 10px .1px white;
@@ -245,8 +247,7 @@ footer {
     color: white;
 
     img {
-      width: 50%;
-      height: 40%;
+      display: none;
     }
 
   }
@@ -271,9 +272,40 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+  
+  .formulaire > h2 {
+    margin-top: 50px;
+  }
+
+  div {
+    margin: auto 0;
+  }
+
   .header {
     .return::before {
       display: none;
     }
+  }
+
+  .formulaire {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+
+  .formulaire form {
+    box-sizing: inherit;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+
+    div {
+      margin: 10px 0;
+    }
+  }
+
+  footer {
+    margin: 0;
   }
 }
